@@ -1,6 +1,6 @@
 import {FC, memo} from 'react';
 
-import {education, experience, SectionId, skills} from '../../../data/data';
+import {education,  SectionId, skills} from '../../../data/data';  {/*experience,*/}
 import Section from '../../Layout/Section';
 import ResumeSection from './ResumeSection';
 import {SkillGroup} from './Skills';
@@ -15,13 +15,26 @@ const Resume: FC = memo(() => {
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
         </ResumeSection>
-        <ResumeSection title="Work">
+       {/*  <ResumeSection title="Work">
           {experience.map((item, index) => (
             <TimelineItem item={item} key={`${item.title}-${index}`} />
           ))}
-        </ResumeSection>
+        </ResumeSection> */ }
         <ResumeSection title="Skills">
-          <p className="pb-8">Here you can show a snapshot of your skills to show off to employers</p>
+          <div className="list-decimal list-inside">
+          <h3 className="text-lg font-bold text-neutral-800">Hard Skills</h3>
+           <p> Proficient in troubleshooting, handling, installing and maintaining software and hardware.
+            currently practicing my coding skills in HTML, CSS, JavaScript, React, and Next.js, responsive design, and web development.
+           </p>
+          </div>
+          <br/>
+          <div>
+          <h3 className="text-lg font-bold text-neutral-800">Soft Skills</h3>
+          <p>Strong logical reasoning, decision-making, problem-solving abilities, attention to detail and excellent communication skills.</p>
+            </div>
+          {/*<p className="pb-8">Proficient in troubleshooting, handling, installing and maintaining software and hardware, since I speak english and spanish,
+            translating is also a skill I have developed, I have experience in customer service, sales, and marketing. Strong logical reasoning, decision-making, problem-solving abilities, attention to detail and excellent communication skills
+          </p> */}
           <div className="grid grid-cols-1 gap-6 md:grid-cols-2">
             {skills.map((skillgroup, index) => (
               <SkillGroup key={`${skillgroup.name}-${index}`} skillGroup={skillgroup} />

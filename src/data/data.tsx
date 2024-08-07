@@ -2,28 +2,28 @@ import {
   AcademicCapIcon,
   ArrowDownTrayIcon,
   BuildingOffice2Icon,
-  CalendarIcon,
+  //CalendarIcon,
   FlagIcon,
   MapIcon,
   SparklesIcon,
 } from '@heroicons/react/24/outline';
 
 import GithubIcon from '../components/Icon/GithubIcon';
-import InstagramIcon from '../components/Icon/InstagramIcon';
+//import InstagramIcon from '../components/Icon/InstagramIcon';
 import LinkedInIcon from '../components/Icon/LinkedInIcon';
-import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
-import TwitterIcon from '../components/Icon/TwitterIcon';
+//import StackOverflowIcon from '../components/Icon/StackOverflowIcon';
+//import TwitterIcon from '../components/Icon/TwitterIcon';
 import heroImage from '../images/header-background.webp';
-import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
-import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
-import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
+//import porfolioImage1 from '../images/portfolio/portfolio-1.jpg';
+//import porfolioImage2 from '../images/portfolio/portfolio-2.jpg';
+//import porfolioImage3 from '../images/portfolio/portfolio-3.jpg';
 import porfolioImage4 from '../images/portfolio/portfolio-4.jpg';
-import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
+//import porfolioImage5 from '../images/portfolio/portfolio-5.jpg';
 import porfolioImage6 from '../images/portfolio/portfolio-6.jpg';
-import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
+//import porfolioImage7 from '../images/portfolio/portfolio-7.jpg';
 import porfolioImage8 from '../images/portfolio/portfolio-8.jpg';
-import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
-import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
+//import porfolioImage9 from '../images/portfolio/portfolio-9.jpg';
+//import porfolioImage10 from '../images/portfolio/portfolio-10.jpg';
 import porfolioImage11 from '../images/portfolio/portfolio-11.jpg';
 import profilepic from '../images/profilepic.jpg';
 import testimonialImage from '../images/testimonial.webp';
@@ -44,8 +44,8 @@ import {
  * Page meta data
  */
 export const homePageMeta: HomepageMeta = {
-  title: 'React Resume Template',
-  description: "Example site built with Tim Baker's react resume template",
+  title: 'Carlos Pineda Resume',
+  description: "site built with Carlos Pineda's react resume",
 };
 
 /**
@@ -69,24 +69,22 @@ export type SectionId = (typeof SectionId)[keyof typeof SectionId];
  */
 export const heroData: Hero = {
   imageSrc: heroImage,
-  name: `I'm Tim Baker.`,
+  name: `Carlos Pineda`,
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a Victoria based <strong className="text-stone-100">Full Stack Software Engineer</strong>, currently working
-        at <strong className="text-stone-100">Instant Domains</strong> helping build a modern, mobile-first, domain
-        registrar and site builder.
+        I'm a <strong className="text-stone-100">Full Stack Software Engineer & Web Developer</strong>, currently working
+        at <strong className="text-stone-100">DendriteDesigns©</strong> helping build modern websites to increase brand awareness and drive sales.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        In my free time time, you can catch me training in <strong className="text-stone-100">Muay Thai</strong>,
-        plucking my <strong className="text-stone-100">banjo</strong>, or exploring beautiful{' '}
-        <strong className="text-stone-100">Vancouver Island</strong>.
+        In my free time, you can catch me training in <strong className="text-stone-100">VS Code</strong>,
+        practicing <strong className="text-stone-100">JS, HTML, CSS, React,</strong> spending time with my family or excercising. I am currently based in <strong className="text-stone-100">Durham, NC, USA</strong>.
       </p>
     </>
   ),
   actions: [
     {
-      href: '/assets/resume.pdf',
+      href: 'https://drive.usercontent.google.com/download?id=1ltWv85f_YkBXB_olQhHJ_1_vInGzCAJ2&export=download&authuser=0&confirm=t&uuid=d01c6043-c0c9-4b03-bdfd-9cb97fe78429&at=APZUnTUznOTLRrf5p-8RgwlpZmOI:1722824189391',
       text: 'Resume',
       primary: true,
       Icon: ArrowDownTrayIcon,
@@ -104,16 +102,17 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Use this bio section as your way of describing yourself and saying what you do, what technologies you like
-  to use or feel most comfortable with, describing your personality, or whatever else you feel like throwing
-  in.`,
+  description: `Currently I just finished my studies at Practicum LATAM and I am looking for a job as a Full Stack Software Engineer. 
+  I have a passion for coding and I am always looking to learn new things. I am a self-taught developer and I have been coding 
+  for over 2 years. I am a quick learner, I like to work hard and I am always looking to improve my skills. Being a team player is very important 
+  to me as I am always looking to help others.`,
   aboutItems: [
-    {label: 'Location', text: 'Victoria, BC', Icon: MapIcon},
-    {label: 'Age', text: '29', Icon: CalendarIcon},
-    {label: 'Nationality', text: 'Canadian / Irish', Icon: FlagIcon},
-    {label: 'Interests', text: 'Motorcycles, Muay Thai, Banjos', Icon: SparklesIcon},
-    {label: 'Study', text: 'University of Victoria', Icon: AcademicCapIcon},
-    {label: 'Employment', text: 'Instant Domains, inc.', Icon: BuildingOffice2Icon},
+    {label: 'Location', text: 'Durham, NC', Icon: MapIcon},
+    //{label: 'Age', text: '40', Icon: CalendarIcon},
+    {label: 'Nationality', text: 'Mexican / American', Icon: FlagIcon},
+    {label: 'Interests', text: 'Coding, Reading, Music', Icon: SparklesIcon},
+    {label: 'Study', text: 'Practicum, LATAM', Icon: AcademicCapIcon},
+    {label: 'Employment', text: 'DendriteDesigns', Icon: BuildingOffice2Icon},
   ],
 };
 
@@ -122,73 +121,79 @@ export const aboutData: About = {
  */
 export const skills: SkillGroup[] = [
   {
-    name: 'Spoken languages',
+    name: 'Hard skills',
     skills: [
       {
-        name: 'English',
+        name: 'HTML',
         level: 10,
       },
       {
-        name: 'French',
-        level: 4,
+        name: 'CSS',
+        level: 9,
       },
       {
-        name: 'Spanish',
-        level: 3,
+        name: 'Javascript',
+        level: 6,
       },
-    ],
-  },
-  {
-    name: 'Frontend development',
-    skills: [
       {
         name: 'React',
         level: 9,
       },
       {
-        name: 'Typescript',
-        level: 7,
-      },
-      {
-        name: 'GraphQL',
+        name: 'Node.js',
         level: 6,
       },
-    ],
-  },
-  {
-    name: 'Backend development',
-    skills: [
       {
-        name: 'Node.js',
+        name: 'Figma',
         level: 8,
       },
       {
-        name: 'Rust',
-        level: 5,
+        name: 'Responsive Design',
+        level: 9,
       },
       {
-        name: 'Golang',
-        level: 4,
+        name: 'Bilingual Spanis/English',
+        level: 8,
       },
     ],
   },
   {
-    name: 'Mobile development',
+    name: 'Soft skills',
     skills: [
       {
-        name: 'React Native',
+        name: 'Communication',
+        level: 10,
+      },
+      {
+        name: 'Problem-solving',
         level: 9,
       },
       {
-        name: 'Flutter',
-        level: 4,
+        name: 'Teamwork',
+        level: 9,
       },
       {
-        name: 'Swift',
-        level: 3,
+        name: 'Adaptability',
+        level: 10,
+      },
+      {
+        name: 'Creativity',
+        level: 10,
+      },
+      {
+        name: 'Critical thinking',
+        level: 10,
+      },
+      {
+        name: 'Attention to detail',
+        level: 10,
+      },
+      {
+        name: 'Decision-making',
+        level: 8,
       },
     ],
-  },
+  }
 ];
 
 /**
@@ -196,69 +201,30 @@ export const skills: SkillGroup[] = [
  */
 export const portfolioItems: PortfolioItem[] = [
   {
-    title: 'Project title 1',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage1,
-  },
-  {
-    title: 'Project title 2',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage2,
-  },
-  {
-    title: 'Project title 3',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage3,
-  },
-  {
-    title: 'Project title 4',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Aprender a Aprender',
+    description: 'On this project I was able to create a webpage using HTML5, CSS, vs code, git, and github. I was able to deploy the webpage using github pages.',
+    url: 'https://drdendrite.github.io/web_project_1_es/',
     image: porfolioImage4,
   },
+
   {
-    title: 'Project title 5',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage5,
-  },
-  {
-    title: 'Project title 6',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Designing Webpages with Figma',
+    description: 'With Figma I was able to design the layout of a webpage and its components before coding it. This helped me to have a clear idea of what I wanted to create.',
+    url: 'https://drive.google.com/file/d/1nxqx7DJ-aplNEUjQKwlBzlh3GA7YkVN_/view?usp=sharing',
     image: porfolioImage6,
   },
+ 
   {
-    title: 'Project title 7',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage7,
-  },
-  {
-    title: 'Project title 8',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'De Patria a Patria',
+    description: 'Here I was able to practice technologies like HTML5, CSS, Figma, Grid, Flexbox, and media queries to create a responsive webpage to different screen sizes.',
+    url: 'https://drdendrite.github.io/web_project_3_esp/',
     image: porfolioImage8,
   },
+
   {
-    title: 'Project title 9',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage9,
-  },
-  {
-    title: 'Project title 10',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
-    image: porfolioImage10,
-  },
-  {
-    title: 'Project title 11',
-    description: 'Give a short description of your project here.',
-    url: 'https://reactresume.com',
+    title: 'Coding with Visual Studio Code',
+    description: 'Here you can have a preview of what happens behind the scenes for a webpage to be created.',
+    url: 'https://drive.google.com/file/d/1fSmqgCBo5LvPsXP7VngEPHO8YhJpDNOT/view?usp=sharing',
     image: porfolioImage11,
   },
 ];
@@ -268,39 +234,71 @@ export const portfolioItems: PortfolioItem[] = [
  */
 export const education: TimelineItem[] = [
   {
-    date: 'April 2007',
-    location: 'Clown college',
-    title: 'Masters in Beer tasting',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'July 2024',
+    location: 'Practicum LATAM',
+    title: 'Full Stack Software Engineer',
+    content: <p>During my time in this bootcamp I learned how to design, build and deploy webpages using HTML5, CSS, JS, React, Node.js, Nginx, Git including how to setup a server to run and mantain webpages on http and https.</p>,
   },
   {
-    date: 'March 2003',
-    location: 'School of Business',
-    title: 'What did you study 101',
-    content: <p>Describe your experience at school, what you learned, what useful skills you have acquired etc.</p>,
+    date: 'June 2011',
+    location: 'University of Guadalajara, Jalisco, Mexico',
+    title: 'Doctorate in Veterinary Medicine',
+    content: <p>As a Veterinary medicine student I was able to aquire knowledge on the anatomy and phisiology of multiple to be able to diagnose,   </p>,
   },
 ];
 
 export const experience: TimelineItem[] = [
   {
-    date: 'March 2010 - Present',
-    location: 'Awesome Development Company',
-    title: 'Senior UX Engineer',
+    date: 'July 2021 to August 2022',
+    location: 'Wells Fargo, Durham, NC',
+    title: 'Teller I',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        As a teller I was responsible for providing excellent customer service, processing transactions, and identifying opportunities to improve customer financial wellbeing. I was also responsible for balancing cash drawers and following procedures to minimize errors and reduce fraud.
       </p>
     ),
   },
   {
-    date: 'March 2007 - February 2010',
-    location: 'Garage Startup Studio',
-    title: 'Junior bug fixer',
+    date: 'June 2020 to July 2021',
+    location: 'Amos Delivery and Courier, Durham, NC',
+    title: 'Delivery Driver',
     content: (
       <p>
-        Describe work, special projects, notable achievements, what technologies you have been working with, and
-        anything else that would be useful for an employer to know.
+        As a delivery driver I was responsible for delivering packages to customers in a timely manner, providing excellent customer service, and maintaining a clean and organized vehicle. 
+        I was also responsible for following all safety procedures and traffic laws to ensure the safety of myself and others on the road.
+      </p>
+    ),
+  },
+  {
+    date: 'May 2018 to May 2020',
+    location: 'Mazatlan of Oxford, Oxford, NC',
+    title: 'Restaurant Manager',
+    content: (
+      <p>
+         As a restaurant manager I was responsible for overseeing the day-to-day operations of the restaurant, including managing staff, scheduling shifts, and ensuring that customers received excellent service. 
+          I was also responsible for ordering supplies, managing inventory, and ensuring that the restaurant was in compliance with health and safety regulations.  
+     </p>
+    ),
+  },
+  {
+    date: 'july 2016 to May 2018',
+    location: 'Willow Oak Veterinary Hospital, Durham, NC',
+    title: 'Veterinary Technician',
+    content: (
+      <p>
+        As a veterinary technician I was responsible for assisting the veterinarian with medical procedures, administering medications, and providing care to animals. 
+        I was also responsible for maintaining medical records, cleaning and sterilizing equipment, and providing support to pet owners.
+      </p>
+    ),
+  },
+  {
+    date: 'January 2014 to June 2016',
+    location: 'Animal Emergency Hospital and Urgent Care, Raleigh, NC',
+    title: 'Veterinary Technician',
+    content: (
+      <p>
+        As a veterinary technician I was responsible for providing emergency and critical care to animals, including administering medications, monitoring vital signs, and assisting with medical procedures. 
+        I was also responsible for communicating with pet owners, maintaining medical records, and ensuring that the hospital was clean and organized.
       </p>
     ),
   },
@@ -336,27 +334,22 @@ export const testimonial: TestimonialSection = {
 
 export const contact: ContactSection = {
   headerText: 'Get in touch.',
-  description: 'Here is a good spot for a message to your readers to let them know how best to reach out to you.',
+  description: 'If you have any questions or would like to work together, please feel free to get in touch.',
   items: [
     {
       type: ContactType.Email,
-      text: 'reachout@timbaker.me',
-      href: 'mailto:reachout@timbaker.me',
+      text: 'ctpineda1@gmail.com',
+      href: 'mailto:ctpineda1@gmail.com',
     },
     {
       type: ContactType.Location,
-      text: 'Victoria BC, Canada',
-      href: 'https://www.google.ca/maps/place/Victoria,+BC/@48.4262362,-123.376775,14z',
-    },
-    {
-      type: ContactType.Instagram,
-      text: '@tbakerx',
-      href: 'https://www.instagram.com/tbakerx/',
+      text: 'Durham, NC',
+      href: 'https://www.google.com/maps/place/Durham,+Carolina+del+Norte/@36.0019915,-79.0500618,11z/data=!3m1!4b1!4m6!3m5!1s0x89ace471120f66f1:0xe17ada898a46f27e!8m2!3d35.9940329!4d-78.898619!16zL20vMDEzaHh2?entry=ttu',
     },
     {
       type: ContactType.Github,
-      text: 'tbakerx',
-      href: 'https://github.com/tbakerx',
+      text: 'DrDendrite',
+      href: 'https://github.com/DrDendrite',
     },
   ],
 };
@@ -365,9 +358,9 @@ export const contact: ContactSection = {
  * Social items
  */
 export const socialLinks: Social[] = [
-  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/tbakerx'},
-  {label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},
-  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/timbakerx/'},
-  {label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},
-  {label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},
+  {label: 'Github', Icon: GithubIcon, href: 'https://github.com/DrDendrite'},
+  //{label: 'Stack Overflow', Icon: StackOverflowIcon, href: 'https://stackoverflow.com/users/8553186/tim-baker'},//
+  {label: 'LinkedIn', Icon: LinkedInIcon, href: 'https://www.linkedin.com/in/carlos-pineda-429742196/'},
+  //{label: 'Instagram', Icon: InstagramIcon, href: 'https://www.instagram.com/reactresume/'},//
+  //{label: 'Twitter', Icon: TwitterIcon, href: 'https://twitter.com/TimBakerx'},//
 ];
