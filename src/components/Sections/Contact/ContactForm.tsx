@@ -32,8 +32,10 @@ const ContactForm: FC = memo(() => {
   const handleSendMessage = useCallback(
     async (event: React.FormEvent<HTMLFormElement>) => {
       event.preventDefault();
-      // Send data to gmail
-      
+      /**
+       * This is a good starting point to wire up your form submission logic
+       * */
+      console.log('Data to send: ', data);
     },
     [data],
   );
