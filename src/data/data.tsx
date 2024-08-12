@@ -73,12 +73,12 @@ export const heroData: Hero = {
   description: (
     <>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
-        I'm a <strong className="text-stone-100">Full Stack Software Engineer & Web Developer</strong>, currently working
+        I'm a <strong className="text-stone-100">Full Stack Web Developer</strong>, currently working
         at <strong className="text-stone-100">DendriteDesigns©</strong> helping build modern websites to increase brand awareness and drive sales.
       </p>
       <p className="prose-sm text-stone-200 sm:prose-base lg:prose-lg">
         In my free time, you can catch me training in <strong className="text-stone-100">VS Code</strong>,
-        practicing <strong className="text-stone-100">JS, HTML, CSS, React,</strong> spending time with my family or excercising. I am currently based in <strong className="text-stone-100">Durham, NC, USA</strong>.
+        practicing <strong className="text-stone-100">JS, HTML, CSS, React,</strong> spending time with my family or reading. I am currently based in <strong className="text-stone-100">Durham, NC, USA</strong>.
       </p>
     </>
   ),
@@ -102,10 +102,10 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `Currently I just finished my studies at Practicum LATAM and I am looking for a job as a Full Stack Software Engineer. 
-  I have a passion for coding and I am always looking to learn new things. I am a self-taught developer and I have been coding 
-  for over 2 years. I am a quick learner, I like to work hard and I am always looking to improve my skills. Being a team player is very important 
-  to me as I am always looking to help others.`,
+  description: `I just finished my studies at Practicum LATAM and am currently looking for a job as a Full Stack Web Developer. 
+  I have a passion for coding and am always eager to learn new things. As a self-taught developer, I have been coding for over 2 years. 
+  I'm a quick learner, a hard worker, and always looking to improve my skills. Being a team player is very important to me, 
+  as I am always looking to help others.`,
   aboutItems: [
     {label: 'Location', text: 'Durham, NC', Icon: MapIcon},
     //{label: 'Age', text: '40', Icon: CalendarIcon},
@@ -202,14 +202,14 @@ export const skills: SkillGroup[] = [
 export const portfolioItems: PortfolioItem[] = [
   {
     title: 'Aprender a Aprender',
-    description: 'On this project I was able to create a webpage using HTML5, CSS, vs code, git, and github. I was able to deploy the webpage using github pages.',
+    description: 'On this project I was able to create a webpage using HTML5, CSS, VS Code, git, and github. I was able to deploy the webpage using github pages.',
     url: 'https://drdendrite.github.io/web_project_1_es/',
     image: porfolioImage4,
   },
 
   {
     title: 'Designing Webpages with Figma',
-    description: 'With Figma I was able to design the layout of a webpage and its components before coding it. This helped me to have a clear idea of what I wanted to create.',
+    description: 'With Figma, I was able to design the layout of a webpage and its components before coding it. This helped me have a clear idea of what I wanted to create.',
     url: 'https://drive.google.com/file/d/1nxqx7DJ-aplNEUjQKwlBzlh3GA7YkVN_/view?usp=sharing',
     image: porfolioImage6,
   },
@@ -237,13 +237,13 @@ export const education: TimelineItem[] = [
     date: 'July 2024',
     location: 'Practicum LATAM',
     title: 'Full Stack Software Engineer',
-    content: <p>During my time in this bootcamp I learned how to design, build and deploy webpages using HTML5, CSS, JS, React, Node.js, Nginx, Git including how to setup a server to run and mantain webpages on http and https.</p>,
+    content: <p>During my time in this bootcamp, I learned how to design, build, and deploy webpages using HTML5, CSS, JS, React, Node.js, Nginx, and Git, including how to set up a server to run and maintain webpages on HTTP and HTTPS.</p>,
   },
   {
     date: 'June 2011',
     location: 'University of Guadalajara, Jalisco, Mexico',
     title: 'Doctorate in Veterinary Medicine',
-    content: <p>As a Veterinary medicine student I was able to aquire knowledge on the anatomy and phisiology of multiple to be able to diagnose,   </p>,
+    content: <p>As a veterinary medicine student, I was able to acquire knowledge of the anatomy and physiology of multiple species to diagnose various conditions.</p>,
   },
 ];
 

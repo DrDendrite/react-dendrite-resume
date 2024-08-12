@@ -25,17 +25,16 @@ const Resume: FC = memo(() => {
             <h3 className="text-lg font-bold text-neutral-800">Hard Skills</h3>
             <p>
               {' '}
-              Proficient in troubleshooting, handling, installing and maintaining software and hardware. currently
-              practicing my coding skills in HTML, CSS, JavaScript, React, and Next.js, responsive design, and web
-              development.
+              Proficient in troubleshooting, handling, installing, and maintaining software and hardware. 
+              Currently practicing my coding skills in HTML, CSS, 
+              JavaScript, React, Next.js, responsive design, and web development.
             </p>
           </div>
           <br />
           <div>
             <h3 className="text-lg font-bold text-neutral-800">Soft Skills</h3>
             <p>
-              Strong logical reasoning, decision-making, problem-solving abilities, attention to detail and excellent
-              communication skills.
+            Strong logical reasoning, decision-making, and problem-solving abilities, with attention to detail and excellent communication skills.
             </p>
           </div>
           {/*<p className="pb-8">Proficient in troubleshooting, handling, installing and maintaining software and hardware, since I speak english and spanish,
