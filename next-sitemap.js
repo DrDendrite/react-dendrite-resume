@@ -1,6 +1,6 @@
 /* eslint-env node */
 module.exports = {
-  siteUrl: 'myresume.twilightparadox.com',
+  siteUrl: 'cpresumedev.com',
   exclude: ['/404*', '/500*'],
   transform: async (config, path) => {
     return {
