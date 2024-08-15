@@ -45,7 +45,7 @@ import {
  */
 export const homePageMeta: HomepageMeta = {
   title: 'Carlos Pineda Resume',
-  description: "site built with Carlos Pineda's react resume",
+  description: "Showcasing my skills, experience, and projects.",
 };
 
 /**
@@ -102,7 +102,7 @@ export const heroData: Hero = {
  */
 export const aboutData: About = {
   profileImageSrc: profilepic,
-  description: `I just finished my studies at Practicum LATAM and am currently looking for a job as a Full Stack Web Developer. 
+  description: `I just finished my studies at Practicum LATAM and am currently looking for a part time job as a Full Stack Web Developer. 
   I have a passion for coding and am always eager to learn new things. As a self-taught developer, I have been coding for over 2 years. 
   I'm a quick learner, a hard worker, and always looking to improve my skills. Being a team player is very important to me, 
   as I am always looking to help others.`,
@@ -152,7 +152,7 @@ export const skills: SkillGroup[] = [
         level: 9,
       },
       {
-        name: 'Bilingual Spanis/English',
+        name: 'Bilingual Spanish/English',
         level: 8,
       },
     ],
@@ -236,7 +236,7 @@ export const education: TimelineItem[] = [
   {
     date: 'July 2024',
     location: 'Practicum LATAM',
-    title: 'Full Stack Software Engineer',
+    title: 'Full Stack Web Developer',
     content: <p>During my time in this bootcamp, I learned how to design, build, and deploy webpages using HTML5, CSS, JS, React, Node.js, Nginx, and Git, including how to set up a server to run and maintain webpages on HTTP and HTTPS.</p>,
   },
   {
